@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.cell{
+    background: #eef;
+    border:1px solid #99b;
+    place-items: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr) 50px;
+}
