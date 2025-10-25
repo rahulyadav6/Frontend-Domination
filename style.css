@@ -40,6 +40,9 @@ html, body{
     font-size: 15px;
     font-weight: 500;
 }
+#left-top-right h6{
+    display: none;
+}
 #left-top-right h5{
     font-size: 12px;
     font-weight: 500;
@@ -88,6 +91,7 @@ html, body{
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
+    object-position: 50% 20%;
 }
 
 #arrow{
@@ -106,4 +110,88 @@ html, body{
 #arrow i{
     font-size: 30px;
     font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------- Responsive ----------------------------- */
+
+@media (max-width:600px) {
+    #main{
+        
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 34% 8%;
+    }
+    #left-top-left{
+    /* background-color: crimson; */
+    padding: 20px;
+}
+
+#square{
+    height: 15px;
+    width: 15px;
+}
+
+#left-top-right{
+    padding: 20px;
+    text-align: right ;
+}
+
+#left-top-right h4{
+    display: none;
+}
+#left-top-right h5{
+    display: none;
+}
+#left-top-right h6{
+    display: initial;
+    font-size: 20px;
+}
+
+#left-center{
+    padding: 10px 20px;
+}
+#left-center h1{
+    font-size: 12vw;
+    line-height: 10vw;
+}
+#left-center h1:nth-child(2n){
+    text-align: right;
+}
+
+#left-bottom{
+    padding: 0px 20px;
+    /* padding-left: 40px; */
+
+}
+#left-bottom p{
+    width: 95%;
+    font-size: 7px;
+}
+
+#arrow{
+    top: 55%;
+    left: 50%;
+    padding: 8px;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+#arrow i{
+    font-size: 15px;
+}
+    #right{
+        grid-column: 1 / 4;
+        grid-row: 4;
+        padding: 10px;
+        padding-right: 10px;
+    }
+    #right video{
+        height: 42vh;
+    }
 }
