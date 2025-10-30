@@ -1,6 +1,6 @@
 @font-face{
     font-family: Gilroy;
-    src: url("./fonts/Gilroy-Regular.ttf");
+    src: url("./fonts/Gilroy-Medium.ttf");
 }
 @font-face{
     font-family: monument;
@@ -15,6 +15,9 @@
 html, body{
     height: 100%;
     width: 100%;
+}
+body{
+    background-color: #F8F8F8;
 }
 #main{
     height: 100%;
@@ -275,4 +278,66 @@ html, body{
     object-fit: cover;
     height: 400px;
     width: 400px;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 7vh;
+}
+
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+.elem img{
+    height: 14vh;
+    width: 14vh;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.7s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 25%;
+}
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 45%;
+}
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 0.9vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
 }
