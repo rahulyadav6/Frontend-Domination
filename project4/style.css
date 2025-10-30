@@ -57,6 +57,27 @@ body{
     font-family: monument;
     font-size: 30px;
     letter-spacing: -1px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©";
+    font-family: Gilroy;
+    font-weight: 400;
+    font-size: 15px;
+    position: absolute;
+    top: 30%;
+    right: 9%;
+}
+#nav h1::before{
+    content: "model management";
+    font-family: Gilroy;
+    font-weight: 500;
+    color: #666;
+    font-size: 10.5px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 24%;
+    right: 13%;
 }
 #nav h2:nth-last-child(1){
     width: 10%;
@@ -78,7 +99,7 @@ body{
 #content{
     height: 100%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
 }
 #content video{
