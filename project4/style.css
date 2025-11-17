@@ -46,7 +46,9 @@ body{
     border-right: 2px solid #000;
     font-size: 1.5vw;
     font-weight: 600;
-    /* background-color: red; */
+}
+#nav h3{
+    display: none;
 }
 #nav h1{
     height: 100%;
@@ -91,7 +93,6 @@ body{
 #center{
     height: 90%;
     width: 100%;
-    /* background-color: red; */
     position: relative;
     padding: 4vw;
 }
@@ -99,7 +100,6 @@ body{
 #content{
     height: 100%;
     width: 100%;
-    /* background-color: blue; */
     position: relative;
 }
 #content video{
@@ -112,7 +112,6 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* background-color: red; */
     padding: 3vw;
 }
 #over1{
@@ -151,8 +150,6 @@ body{
 #scroll{
     height: 40vh;
     width: 100%;
-    /* background-color: red; */
-    /* padding: 1vw; */
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -160,7 +157,6 @@ body{
 #container{
     height: 100%;
     width: 120%;
-    /* background-color: blue; */
     display: inline-block;
     padding: 2vw;
     animation-name: animate;
@@ -401,4 +397,121 @@ body{
 #footer{
     height: 100%;
     width: 100%;
+}
+
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    #nav{
+        height: 8vh;
+        margin-top: 2vh;
+        padding: 0 5vw;
+    }
+
+    #nav h2{
+        display: none;
+    }
+    #nav h1{
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+    #nav h1::after{
+        display: none;
+    }
+    #nav h1::before{
+        display: none;
+    }
+    #nav h3{
+        display: block;
+    }
+
+    /* center */
+    #center{
+    height: 40%;
+    width: 100%;
+    position: relative;
+    padding: 4vw;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+#over1 h1{
+     font-family: monument;
+     font-size: 5.5vw;
+    font-weight: 100;
+}
+#over1 h2{
+    font-size: 2vw;
+    padding: 3vw 3.2vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 3vw;
+    font-weight: 500;
+    color: #fff;
+}
+#over2 img{
+    height: 5vw;
+}
+
+
+#scroll{
+    height: 20vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 210%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: animate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 13%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
 }
