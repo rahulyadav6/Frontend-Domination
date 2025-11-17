@@ -9,24 +9,53 @@
 
 
 // Question 4.
-let ul = document.querySelector("ul");
-let inp = document.querySelector("input");
-let addBtn = document.querySelector("#add");
-let removeBtn = document.querySelector("#remove");
-let li;
+// let ul = document.querySelector("ul");
+// let inp = document.querySelector("input");
+// let addBtn = document.querySelector("#add");
+// let removeBtn = document.querySelector("#remove");
+// let li;
 
 
-addBtn.addEventListener("click", (e)=>{
-    if(inp.value.trim() === ""){
-        alert("Cannot add empty items");
-    }else{
-        li = document.createElement("li");
-        li.textContent = inp.value;
-        ul.appendChild(li);
-        inp.value = "";
+// addBtn.addEventListener("click", (e)=>{
+//     if(inp.value.trim() === ""){
+//         alert("Cannot add empty items");
+//     }else{
+//         li = document.createElement("li");
+//         li.textContent = inp.value;
+//         ul.appendChild(li);
+//         inp.value = "";
+//     }
+// })
+// removeBtn.addEventListener("click", (e)=>{
+//     ul.removeChild(li);
+// })
+
+
+
+// Question 5
+let time = document.querySelector("h3");
+let startBtn = document.querySelector("#start");
+let stopBtn = document.querySelector("#stop");
+let resetBtn = document.querySelector("#reset");
+let timer = 0;
+time.innerText = timer;
+let intervalId = null;
+startBtn.addEventListener("click", (e)=>{
+    if(intervalId === null){
+        intervalId = setInterval(() => {
+            time.innerText = timer;
+            timer++;
+        }, 1000);  
     }
 })
-removeBtn.addEventListener("click", (e)=>{
-    ul.removeChild(li);
+stopBtn.addEventListener("click", (e)=>{
+    clearInterval(intervalId);
+    intervalId = null;
+})
+
+resetBtn.addEventListener("click", (e)=>{
+    timer = 0;
+    time.innerText = timer;
+    intervalId = null;
 })
 
