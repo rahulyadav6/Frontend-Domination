@@ -60,14 +60,16 @@
 // })
 
 // Question 7
-let progress = document.querySelector("#progress")
-let count = 0;
-let intervalId = setInterval(() => {
-    if(count === 100){
-        clearInterval(intervalId)
-    }
-    count++;
-    progress.style.width = count+"%"
-}, 50);
+// let progress = document.querySelector("#progress")
+// let count = 0;
+// let intervalId = setInterval(() => {
+//     if(count === 100){
+//         clearInterval(intervalId)
+//     }
+//     count++;
+//     progress.style.width = count+"%"
+// }, 50);
+
+// Question 8 
 
 
