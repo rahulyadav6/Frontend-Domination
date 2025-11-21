@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/Gsap/two/public/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/Gsap/two/public/fonts/Gilroy-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+#nav-part2{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 30px;
+}
+#nav h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#main h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 90px;
+    /* background-color: red; */
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    z-index: 9;
+}
+#main h1:nth-child(2){
+    margin-top: 140px;
+}
+#main h1:nth-child(3){
+    text-align: center;
+}
+#main h1:nth-child(4){
+    text-align: center;
+}
+
+img{
+    height: 300px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+#img1{
+    rotate: 20deg;
+}
+#img2{
+    rotate: 10deg;
+}
