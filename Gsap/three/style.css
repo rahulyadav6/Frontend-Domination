@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/Gsap/two/public/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/Gsap/two/public/fonts/Gilroy-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(164, 218, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(95, 192, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle{
+    height:200px;
+    width: 200px;
+    background: linear-gradient(lightblue, royalblue);
+    border-radius: 50%;
+}
